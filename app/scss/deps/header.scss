@@ -1,0 +1,55 @@
+header.mdl-layout__header.mdl-layout__header--scroll{
+  background:url("https://images.unsplash.com/photo-1452723312111-3a7d0db0e024?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=774e99d16e3f3f0e4138be9d98e4f0f9");
+  background-size:cover;
+  background-position-y: 50%;
+  .mdl-layout__header-row{
+    position: relative;
+    .backbutton{
+      left: 0;
+      position: absolute;
+      margin-left: 15px;
+      margin-top: 15px;
+      color: white;
+      i{
+        font-size: 34px;
+        user-select: none;
+      }
+      &.mdl-button--fab{
+        background: transparent;
+        box-shadow: none;
+      }
+    }
+    h3{
+      text-align: center;
+      width: 100%;
+      font-weight: 500;
+      font-size: 60px;
+      @media screen and (max-width: 550px) {
+        margin-left: -15px;
+      }
+      span{
+        float: left;
+        width: 100%;
+        font-size: 22px;
+        margin-top:10px;
+        font-weight: 300;
+        @media screen and (max-width: 550px){
+          font-size: 18px;
+          margin-top:5px;
+
+        }
+      }
+      @media screen and (max-width: 1024px) {
+        font-size: 35px;
+      }
+    }
+    nav.mdl-navigation{
+      align-items: flex-end;
+      .mdl-navigation__link.mdl-layout__tab{
+        line-height: 50px;
+        font-weight: 300;
+        font-size: 20px;
+      }
+    }
+  }
+}
